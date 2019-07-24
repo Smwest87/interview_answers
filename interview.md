@@ -23,7 +23,7 @@
 
 <h2>SQL Questions - Answers</h2>
 
-<ol>
+<ul>
 
 <li>List me the stores allowed to sell alcohol<li>
 
@@ -59,7 +59,7 @@
     FROM (SELECT ol.id, ol.product_id, sp.price, ol.store_id, ol.qty, ol.qty * sp.price as line_total FROM interview.store_prices sp
 		JOIN interview.order_lines ol on sp.product_id = ol.id) AS subquery
     WHERE subquery.id = ol.id;
-</ol>
+</ul>
 
 
 <h2>Automation Assessments</h2>
