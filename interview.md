@@ -94,6 +94,10 @@ you feel they lend better to this type of testing.
 
                 $pip install -r requirements.txt
 
+                $cd api automation
+
+                $pytest
+
 
 
 Using the Star Wars API https://swapi.co/documentation write a test that does the following:
