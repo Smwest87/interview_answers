@@ -143,7 +143,6 @@ run the same tests
 <li>Navigate to the page in my browser and select the element with element inspector</li>
 <li>If the element has a unique id, name, class or other attribute and I use that to build my xpath</li>
 <li>Otherwise I navigate to the partent div and look for unique identifiers and then follow that to the correct child</li>
-<li>
 </ol>
 <li>What do you believe are the most common causes for instability in UI automation?</li>
 <ol>
