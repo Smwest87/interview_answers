@@ -94,7 +94,7 @@ you feel they lend better to this type of testing.
 
                 $pip install -r requirements.txt
 
-                $cd api automation
+                $cd api_automation
 
                 $pytest
 
