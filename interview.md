@@ -23,7 +23,7 @@
 
 <h2>SQL Questions - Answers</h2>
 
-<ul>
+<ol>
 
 <li>List me the stores allowed to sell alcohol</li>
 
@@ -59,7 +59,7 @@
     FROM (SELECT ol.id, ol.product_id, sp.price, ol.store_id, ol.qty, ol.qty * sp.price as line_total FROM interview.store_prices sp
 		JOIN interview.order_lines ol on sp.product_id = ol.id) AS subquery
     WHERE subquery.id = ol.id;
-</ul>
+</ol>
 
 
 <h2>Automation Assessments</h2>
@@ -83,7 +83,7 @@ you feel they lend better to this type of testing.
 <li>Ruby</li>
 </ul>
 <h3>API Automation</h3>
-This has been completed in the api_automation folder. Using the interview venv should provide all packages needed to run pytest.
+<strong>This has been completed in the api_automation folder. Using the interview venv should provide all packages needed to run pytest.</strong>
 
 Using the Star Wars API https://swapi.co/documentation write a test that does the following:
 <ul>
