@@ -6,7 +6,7 @@
 <ol>
 <li>Navigate to www.shipt.com. Choose a feature of the site and write a description or test case to describe how to test the feature.</li>
 
-<h3>Add Address Auto Complete<\h3>
+<h3>Add Address Auto Complete </h3>
 <ul>
 <li>Log into Shipt.com and navigate to Account>Addresses</li>
 <li>Select `Add Address`</li>
