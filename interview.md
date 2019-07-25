@@ -18,20 +18,29 @@
 <li>Locate one bug or bad workflow within the app.</li>
 <ol>
 <li>Explain the behavior you are seeing</li>
+
                         Very small User Experience issue but one that annoys me. Navigate to Account > Orders
                         Under the Past tab attempt to click on any of the elements above View Details but still in that specific order
                         Expected Result: User should be navigated to the Order Details Screen
                         Actual Result: No navigation occurrs - User must click the View Details to navigate to the Details Page
+
 <li>Include any useful errors or screenshots</li>
+
                         [![Click Area](https://raw.githubusercontent.com/Smwest87/interview_answers/master/screenshot.png)]]
+
 <li>Explain why and how it needs to be corrected</li>
+
                         The mobile app allows the user to select anywhere inside of the order element and be navigated to the details page. This feels natural to me
                         I would expect the same kind of functionality on Segway pages.
                         Make any area within the order div clickable to take the user to the details page.
+
 <li>What are the steps you would take to report the issue?</li>
+
                         Build a clubhouse card for the Segway Team. I tested on Mobile Member App and the functionality was as expected.
                         Include the steps to reproduce, browser and my expected result
+
 <li>What priority would you give this bug (Scale of 1-5, 1 being highest) and why?</li>
+
                         Priority would be a 5. This isn't going to prevent any kind of functionality and is just a mere annoyance. 
 </ol>
 <li>What are the possible reasons for the following defect? How would you go about debugging the problem and gathering more information?</li>
