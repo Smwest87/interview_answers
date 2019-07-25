@@ -23,7 +23,7 @@
         Expected Result: User should be navigated to the Order Details Screen
         Actual Result: No navigation occurrs - User must click the View Details to navigate to the Details Page
 <li>Include any useful errors or screenshots</li>
-        ![Click Area](https://raw.githubusercontent.com/Smwest87/interview_answers/master/screenshot.png)]
+        [![Click Area](https://raw.githubusercontent.com/Smwest87/interview_answers/master/screenshot.png)]]
 <li>Explain why and how it needs to be corrected</li>
         The mobile app allows the user to select anywhere inside of the order element and be navigated to the details page. This feels natural to me
         I would expect the same kind of functionality on Segway pages.
@@ -40,6 +40,12 @@
         the user is allowed to click Save, and it seems to work, but the saved number
         remains the second number rather than updating to the more recently entered
         number. A page refresh does not change the result.
+
+        My first thought is there is some check to see if the phone number exists in the phone_numbers table. If it does, maybe no other profile can have that phone number.
+        So to confirm, open my console, reload the page. Select the Edit button and change the phone number to the original number.
+        If an error appears in the console it will hopefully give me some information on where to look next. 
+        I can also look at the database itself. Does the original phone number still exist in the database? Was it soft deleted?
+        Ultimately there is some validation preventing the original phone number from being used on the back end. Otherwise we would see a error message on the front end. 
 </ol>
 
 <h2>SQL Questions - Answers</h2>
@@ -107,17 +113,17 @@ you feel they lend better to this type of testing.
 <strong>This has been completed in the api_automation folder.</strong>
 
 
-                $pip install venv
+        $pip install venv
 
-                $python -m venv interview
+        $python -m venv interview
 
-                $source interview/bin/activate
+        $source interview/bin/activate
 
-                $pip install -r requirements.txt
+        $pip install -r requirements.txt
 
-                $cd api_automation
+        $cd api_automation
 
-                $pytest
+        $pytest
 
 
 
