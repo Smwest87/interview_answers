@@ -25,12 +25,12 @@
 
 <ul>
 
-<li>List me the stores allowed to sell alcohol<li>
+<li>List me the stores allowed to sell alcohol</li>
 
         'SELECT id, name FROM interview.stores
         WHERE allowed_alcohol = True;'
 
-<li>Give the product name of the 2 most expensive items based on their price at store id 1<li>
+<li>Give the product name of the 2 most expensive items based on their price at store id 1</li>
 
         SELECT p.name FROM interview.products p
         JOIN interview.store_prices sp on sp.product_id = p.id 
@@ -38,13 +38,13 @@
         ORDER BY sp.price DESC
         LIMIT 2;
 
-<li>List the products that are not sold in the store id 2<li>
+<li>List the products that are not sold in the store id 2</li>
 
         SELECT p.id, p.name FROM interview.products p
         JOIN interview.store_prices sp on sp.product_id = p.id
         WHERE store_id != 2 ;
 
-<li>What is the most popular item sold?<li>
+<li>What is the most popular item sold?</li>
 
         SELECT ol.product_id, p.name,  sum(qty) as total_ordered FROM interview.order_lines ol
         JOIN interview.products p ON ol.product_id = p.id
@@ -52,7 +52,7 @@
         order by 3 desc
         LIMIT 1;
 
-<li>Write a SQL statement to update the line_total field<li>
+<li>Write a SQL statement to update the line_total field</li>
 
     UPDATE interview.order_lines ol
     SET line_total = subquery.line_total
@@ -83,6 +83,8 @@ you feel they lend better to this type of testing.
 <li>Ruby</li>
 </ul>
 <h3>API Automation</h3>
+This has been completed in the api_automation folder. Using the interview venv should provide all packages needed to run pytest.
+
 Using the Star Wars API https://swapi.co/documentation write a test that does the following:
 <ul>
 <li>Assert that Obi-Wan Kenobi was in the film A New Hope</li>
