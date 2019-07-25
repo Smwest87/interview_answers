@@ -6,16 +6,17 @@
 <ol>
 <li>Navigate to www.shipt.com. Choose a feature of the site and write a description or test case to describe how to test the feature.</li>
 
-Add Address Auto Complete
-Log into Shipt.com and navigate to Account>Addresses
-Select `Add Address`
-Input test address into `Start typing an address field` - attempt to use the autocomplete option
-Assert - Street Address, Unit/APT, City, State, Zip Code match test address
-Select Save
-Assert Address has been added to list of address
-Select test address 
-Assert selection of retailers display
-
+<h3>Add Address Auto Complete<h3>
+<ul>
+<li>Log into Shipt.com and navigate to Account>Addresses</li>
+<li>Select `Add Address`</li>
+<li>Input test address into `Start typing an address field` - attempt to use the autocomplete option</li>
+<li>Assert - Street Address, Unit/APT, City, State, Zip Code match test address</li>
+<li>Select Save</li>
+<li>Assert Address has been added to list of address</li>
+<li>Select test address </li>
+<li>Assert selection of retailers display</li>
+</ul>
 <li>Locate one bug or bad workflow within the app.</li>
 <ol>
 <li>Explain the behavior you are seeing</li>
