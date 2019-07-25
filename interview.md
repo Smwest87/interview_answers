@@ -8,6 +8,7 @@
 
 <h3>Add Address Auto Complete </h3>
 <ul>
+<h2>Valid Address</h2>
 <li>Log into Shipt.com and navigate to Account>Addresses</li>
 <li>Select `Add Address`</li>
 <li>Input test address into `Start typing an address field` - attempt to use the autocomplete option</li>
@@ -16,6 +17,10 @@
 <li>Assert Address has been added to list of address</li>
 <li>Select test address </li>
 <li>Assert selection of retailers display</li>
+
+<h2>Invalid Address</h2>
+<li> Instead of a valid address, input a fictional address `4444 Turetles Are Cool Drive, Camelot, Nether Realm 45455`</li>
+<li> No drop down should appear</li>
 </ul>
 <li>Locate one bug or bad workflow within the app.</li>
 <ol>
