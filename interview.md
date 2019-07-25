@@ -83,7 +83,18 @@ you feel they lend better to this type of testing.
 <li>Ruby</li>
 </ul>
 <h3>API Automation</h3>
-<strong>This has been completed in the api_automation folder. Using the interview venv should provide all packages needed to run pytest.</strong>
+<strong>This has been completed in the api_automation folder.</strong>
+
+
+                $pip install venv
+
+                $python -m venv interview
+
+                $source interview/bin/activate
+
+                $pip install -r requirements.txt
+
+
 
 Using the Star Wars API https://swapi.co/documentation write a test that does the following:
 <ul>
