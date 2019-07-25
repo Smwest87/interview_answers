@@ -138,8 +138,23 @@ Recommended languages we use are below:
 run the same tests
 <h2>Automation Assessment Follow Up Questions:</h2>
 <ol>
-<li>If you chose to use a tool or language other than the recommended, briefly explain why.</li>
 <li>How did you go about locating the elements for your tests?</li>
+<ol>
+<li>Navigate to the page in my browser and select the element with element inspector</li>
+<li>If the element has a unique id, name, class or other attribute and I use that to build my xpath</li>
+<li>Otherwise I navigate to the partent div and look for unique identifiers and then follow that to the correct child</li>
+<li>
+</ol>
 <li>What do you believe are the most common causes for instability in UI automation?</li>
+<ol>
+<li>time.sleep(n) versus using implicit waits. Sometimes pages take longer/shorter to load and either cause failures or extends the length of the test</li>
+<li>Using xpaths that begin at the root of the page. Common with right click copy xpath instead of building your own xpath as close as you can to the desired element</li>
+<li>Forgetting to maximise the browser window, especially in headless mode. This can result in the incorrect element receiving the click </li>
+</ol>
 <li>How do you make your tests consistent and easy to debug?</li>
+<ol>
+<li>Funcitons and classes. If all of my functions are defined in a single location I don't have to go back to multiple locations in the code and update/fix in the future</li>
+<li>Comments. Comments in your code allow others to follow your train of thought and what you intended with the code. It also forces you to explain your code and can result in you finding your own mistakes</li>
+<li>Just like functions and classes, define your xpaths/selectors in a different file/class. If all the xpaths/selectors are in one place you don't have to hunt through your code to find each xpath to update. </li>
+</ol>
 </ol>
