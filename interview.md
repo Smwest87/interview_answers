@@ -5,13 +5,34 @@
 
 <ol>
 <li>Navigate to www.shipt.com. Choose a feature of the site and write a description or test case to describe how to test the feature.</li>
+        Add Address Auto Complete
+        Log into Shipt.com and navigate to Account>Addresses
+        Select `Add Address`
+        Input test address into `Start typing an address field` - attempt to use the autocomplete option
+        Assert - Street Address, Unit/APT, City, State, Zip Code match test address
+        Select Save
+        Assert Address has been added to list of address
+        Select test address 
+        Assert selection of retailers display
+
 <li>Locate one bug or bad workflow within the app.</li>
 <ol>
 <li>Explain the behavior you are seeing</li>
+        Very small User Experience issue but one that annoys me. Navigate to Account > Orders
+        Under the Past tab attempt to click on any of the elements above View Details but still in that specific order
+        Expected Result: User should be navigated to the Order Details Screen
+        Actual Result: No navigation occurrs - User must click the View Details to navigate to the Details Page
 <li>Include any useful errors or screenshots</li>
+        ![Click Area}(./screenshot.png)]
 <li>Explain why and how it needs to be corrected</li>
+        The mobile app allows the user to select anywhere inside of the order element and be navigated to the details page. This feels natural to me
+        I would expect the same kind of functionality on Segway pages.
+        Make any area within the order div clickable to take the user to the details page.
 <li>What are the steps you would take to report the issue?</li>
+        Build a clubhouse card for the Segway Team. I tested on Mobile Member App and the functionality was as expected.
+        Include the steps to reproduce, browser and my expected result
 <li>What priority would you give this bug (Scale of 1-5, 1 being highest) and why?</li>
+        Priority would be a 5. This isn't going to prevent any kind of functionality and is just a mere annoyance. 
 </ol>
 <li>What are the possible reasons for the following defect? How would you go about debugging the problem and gathering more information?</li>
         On a web application, a user adds a phone number to their account. The user
@@ -148,7 +169,7 @@ run the same tests
 <ol>
 <li>time.sleep(n) versus using implicit waits. Sometimes pages take longer/shorter to load and either cause failures or extends the length of the test</li>
 <li>Using xpaths that begin at the root of the page. Common with right click copy xpath instead of building your own xpath as close as you can to the desired element</li>
-<li>Forgetting to maximise the browser window, especially in headless mode. This can result in the incorrect element receiving the click </li>
+<li>Forgetting to maximise the browser window in the options parameter, especially in headless mode. This can result in the incorrect element receiving the click </li>
 </ol>
 <li>How do you make your tests consistent and easy to debug?</li>
 <ol>
