@@ -23,7 +23,7 @@
         Expected Result: User should be navigated to the Order Details Screen
         Actual Result: No navigation occurrs - User must click the View Details to navigate to the Details Page
 <li>Include any useful errors or screenshots</li>
-        ![Click Area}(./screenshot.png)]
+        ![Click Area](./screenshot.png)]
 <li>Explain why and how it needs to be corrected</li>
         The mobile app allows the user to select anywhere inside of the order element and be navigated to the details page. This feels natural to me
         I would expect the same kind of functionality on Segway pages.
