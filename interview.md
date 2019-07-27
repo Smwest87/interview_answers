@@ -7,6 +7,8 @@
 <li>Navigate to www.shipt.com. Choose a feature of the site and write a description or test case to describe how to test the feature.</li>
 
 <h3>Add Address Auto Complete </h3>
+
+
 <ul>
 <h2>Valid Address</h2>
 <li>Log into Shipt.com and navigate to Account>Addresses</li>
@@ -22,6 +24,8 @@
 <li> Instead of a valid address, input a fictional address `4444 Turetles Are Cool Drive, Camelot, Nether Realm 45455`</li>
 <li> No drop down should appear</li>
 </ul>
+
+
 <li>Locate one bug or bad workflow within the app.</li>
 <ol>
 <li>Explain the behavior you are seeing</li>
